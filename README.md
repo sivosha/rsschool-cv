@@ -1,2 +1,2 @@
 # rsschool-cv
-https://sivosha.github.io/rsschool-cv/cv
+https://your-sivosha.github.io/rsschool-cv/cv
