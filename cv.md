@@ -18,3 +18,49 @@ internship as plugins developer. Before maternity leave I worked as a Junior Gam
 **Development tools:** NetBeans, Eclipse, Pycharm, VisualStudio\
 **Project Management Tools:** JIRA, GitHub, Red Beans
 
+
+## Projects
+Project for [DareIT course](https://github.com/sivosha/challenge_portfolio_pati)
+
+## Code example
+```
+//decode the Morse code
+decodeMorse = function(morseCode){
+  var realWords = [];
+  const words = morseCode.trim().split('   ');
+  for (const word of words) {
+    const symbols = word.split(' ');
+    var realWord = '';
+    for (const symbol of symbols)
+      realWord += MORSE_CODE[symbol]
+    realWords.push(realWord)
+  }
+  return realWords.join(' ');
+}
+```
+
+## Career
+
+| Neo Financial | Period of work (02/2023 - 07/2024) |
+|:------------------:|:----------------------------------:|
+| Quality Assurance Specialist | Online banking |
+
+| Ubisoft Kyiv | Period of work (01/2018 - 07/2018) |
+|:------------------:|:----------------------------------:|
+| Game Tester | Testing FarCry5 |
+
+| Software Developer | Period of work (06/2012 - 09/2012) |
+|:------------------:|:----------------------------------:|
+| Intern | Wordpress plugins developer |
+
+## Courses
+* RS.School JS/FrontEnd
+* QA Automated Testing (DareIT)
+* QA Testing (Infopulse) 
+
+## Education
+**Master degree** - Information Tehnologies (in English)    2015-2017\
+**Bachelor degree** - ComputerScience (in English)  2010-2014
+
+## Language
+**English language** - C1
