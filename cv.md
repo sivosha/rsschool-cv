@@ -6,6 +6,7 @@
 * <a href="http://www.linkedin.com/in/olga-vozniuk" rel="nofollow noreferrer">
     <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn
   </a>
+  
 ## About Me
 My name is Olga Vozniuk. I am QA tester with almost 3 years of software testing and development experience. I worked as Quality Assurance Specialist for banking app. I tested web sites with Eyetracking system, fire-detection system and mobile phones. That gave me an eye for details and taught about an importance of user interface design. I used JavaScript, CSS, Python and HTML knowledge during my summer
 internship as plugins developer. Before maternity leave I worked as a Junior Game Tester at Ubisoft Kyiv.
