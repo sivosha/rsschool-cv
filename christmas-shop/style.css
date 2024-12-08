@@ -339,7 +339,6 @@ a:visited,
 a:hover,
 a:active {
     cursor: pointer;
-    text-decoration: none;
     color: inherit;
     text-decoration: none;
     border: none;
@@ -935,6 +934,11 @@ a:active {
 .footer-card:hover {
     transform: translateY(-5px);
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+}
+a.footer-card {
+    text-decoration: none;
+    color: #333;
+    box-shadow: none;
 }
 
 .footer-card-icon {
