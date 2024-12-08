@@ -571,55 +571,75 @@ a:active {
 }
 
 /* Gift Cards Container */
+
 .gift-cards {
     display: flex;
-    flex-direction: row;
-    gap: 20px;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    max-width: 1440px;
+    gap: 20px;
     justify-content: center;
 }
 
-/* Individual Gift Card */
 .gift-card {
-    flex: 1;
-    min-width: 250px;
-    max-width: 300px;
-    background-color: #EAF5FF;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    min-height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
 }
+
+.gift-card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+
+@media (max-width: 1024px) {
+    .gift-card {
+        flex: 1 1 calc(50% - 20px);
+        /* Two cards per row */
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .gift-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .gift-card img {
+        min-height: 450px;
+    }
+
+    .gift-text {
+        font-size: 14px;
+        line-height: 1.4;
+        height: 30%;
+    }
+}
+
 
 .gift-cards .gift-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-.gift-card {
+/* .gift-card {
     flex: 1 1 calc(25% - 20px);
     max-width: calc(25% - 20px);
     min-width: 200px;
     box-sizing: border-box;
-}
+} */
 
-@media (max-width: 768px) {
-    .gift-card {
-        flex: 1 1 calc(50% - 20px);
-    }
-}
-
-@media (max-width: 380px) {
-    .gift-card {
-        flex: 1 1 100%;
-    }
-}
 
 /* Gift Card Image */
 .gift-image {
@@ -639,10 +659,9 @@ a:active {
     align-items: flex-start;
     text-align: left;
     padding-left: 10%;
-    padding-top: 10px;
-    ;
     padding-bottom: 10px;
 }
+
 
 .gifts-heading {
     font-family: 'Dancing Script', cursive;
@@ -676,16 +695,17 @@ a:active {
 }
 
 /* Responsive Design Giftcard*/
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .gift-cards {
         justify-content: center;
-    }
+    } */
 
-    .gift-card {
+/* .gift-card {
         flex: 1 1 100%;
         max-width: 300px;
-    }
-}
+    } */
+
+
 
 /* Count Down */
 .cta-section {
@@ -829,27 +849,12 @@ a:active {
     margin: 10px 0 30px;
 }
 
-.gift-card {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    color: #FF615D;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #ECF3F8;
-}
-
 .gift-card img {
-    flex: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+    width: 100%; 
+    height: auto; 
+    max-height: 200px; 
     object-fit: cover;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    background-color: #ECF3F8;
 }
 
 .gift-info {
@@ -866,13 +871,6 @@ a:active {
     width: 100%;
     border-radius: 10px;
 
-}
-
-.gift-cards {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
 }
 
 .gift-info {
@@ -935,6 +933,7 @@ a:active {
     transform: translateY(-5px);
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
 }
+
 a.footer-card {
     text-decoration: none;
     color: #333;
@@ -1020,18 +1019,6 @@ a.footer-card {
     border-radius: 20px;
 }
 
-.gift-card.hidden {
-    display: none;
-}
-
-.gift-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex: 1 1 calc(25% - 20px);
-    box-sizing: border-box;
-}
-
 /* 380 screen */
 @media (max-width: 380px) {
     .menu {
@@ -1080,16 +1067,6 @@ a.footer-card {
         padding: 10px 0px;
     }
 
-    .gift-cards {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .gift-card {
-        width: 100%;
-        max-width: 100%;
-    }
-
     .cta-section {
         padding: 20px 10px;
         text-align: center;
@@ -1106,7 +1083,6 @@ a.footer-card {
     }
 
     .footer-card {
-        width: 100%;
         max-width: 100%;
     }
 
