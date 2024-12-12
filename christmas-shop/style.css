@@ -1113,4 +1113,22 @@ a.footer-card {
         gap: 10px;
         flex-wrap: wrap;
     }
+    @media (max-width: 768px) {
+
+        .gift-card:hover,
+        .footer-card:hover,
+        .cta-button:hover {
+            transform: none;
+            box-shadow: none;
+            background-color: inherit;
+            color: inherit;
+            cursor: default;
+        }
+
+        .filter-btn:hover {
+            background-color: inherit;
+            color: inherit;
+            cursor: default;
+        }
+    }
 }
